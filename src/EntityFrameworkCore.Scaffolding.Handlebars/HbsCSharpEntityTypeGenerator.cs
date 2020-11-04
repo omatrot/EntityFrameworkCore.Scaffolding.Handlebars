@@ -380,7 +380,7 @@ namespace EntityFrameworkCore.Scaffolding.Handlebars
             }
         }
 
-        private void GenerateNavigationDataAnnotations(INavigation navigation)
+        protected void GenerateNavigationDataAnnotations(INavigation navigation)
         {
             if (navigation == null) throw new ArgumentNullException(nameof(navigation));
 
